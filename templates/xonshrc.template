@@ -1,0 +1,13 @@
+# coding:utf-8
+
+import os, sys
+
+$XONSHRCD_DIR='~/.xonshrc.d'
+
+$LANG='en_DK.UTF-8'
+$LC_ALL='en_DK.UTF-8'
+$XONSH_ENCODING = 'UTF-8'
+
+$FORCE_POSIX_PATHS = True
+
+source os.path.join($XONSHRCD_DIR, 'init.xsh')

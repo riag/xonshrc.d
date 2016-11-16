@@ -10,4 +10,7 @@ $XONSH_ENCODING = 'UTF-8'
 
 $FORCE_POSIX_PATHS = True
 
-source os.path.join($XONSHRCD_DIR, 'init.xsh')
+source_alias = aliases['source']
+
+init_xsh_path=os.path.join($XONSHRCD_DIR, 'init.xsh')
+source_alias([init_xsh_path,])

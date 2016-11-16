@@ -12,5 +12,9 @@ $FORCE_POSIX_PATHS = True
 
 source_alias = aliases['source']
 
+prepare_xsh_path=os.path.join($XONSHRCD_DIR, 'prepare.xsh')
+if os.path.isfile(prepare_xsh_path):
+  source_alias([prepare_xsh_path,])
+
 init_xsh_path=os.path.join($XONSHRCD_DIR, 'init.xsh')
 source_alias([init_xsh_path,])

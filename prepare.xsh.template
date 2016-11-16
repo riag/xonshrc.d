@@ -1,0 +1,5 @@
+# coding: utf-8
+
+#$XONSH_SHOW_TRACEBACK = True
+
+#$XONSH_DEBUG=1
